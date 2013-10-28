@@ -44,17 +44,10 @@
 
     $.fn.progressTimer.defaults = {
         timeLimit: 60,  //total number of seconds
-        warningThreshold: 5,  //point to switch to warning color
+        warningThreshold: 5,  //seconds remaining triggering switch to warning color
         onFinish: function () {},  //invoked once the timer expires
-        //TODO: See if we can change this to nothing so as not to override the default dark blue color.
-		//baseStyle: 'progress-bar-info',  //bootstrap progress bar style
-		baseStyle: '',  //bootstrap progress bar style
+		baseStyle: '',  //bootstrap progress bar style at the beginning of the timer
         warningStyle: 'progress-bar-danger',  //bootstrap progress bar style in the warning phase
         completeStyle: 'progress-bar-success'  //bootstrap progress bar style at completion of timer
     };
 }(jQuery));
-
-//Minification:
-//uglifyjs -o jquery.progressTimer.min.js jquery.progressTimer.js
-
-//TODO: Timer is taking roughly twice as long as it should (15 seconds takes 30 to expire, for example)
