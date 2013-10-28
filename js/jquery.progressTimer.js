@@ -1,6 +1,6 @@
 ﻿(function ($) {
     $.fn.progressTimer = function (options) {
-        var settings = $.extend({}, $.fn.progressTimer.defaults, options);
+		var settings = $.extend({}, $.fn.progressTimer.defaults, options);
 
         this.each(function () {
             $(this).empty();
