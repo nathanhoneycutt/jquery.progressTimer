@@ -3,7 +3,7 @@
   "title": "progressTimer",
   "description": "Simple jQuery plugin for using a Bootstrap progress bar as the visual representation for a timer.",
   "keywords": ["timer","progressbar"],
-  "version": "0.1.0",
+  "version": "1.0.1",
   "author": {
     "name":   "Nathan Honeycutt",
     "email":  "nlhoneycutt@gmail.com",
