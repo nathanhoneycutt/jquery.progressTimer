@@ -17,8 +17,10 @@
             var start = new Date();
             var limit = settings.timeLimit * 1000;
             var interval = window.setInterval(function () {
-                var elapsed = new Date() - start;
-                bar.width(((elapsed / limit) * 100) + "%");
+                var elapsed = new Date() - start,
+                    current = (elapsed / limit) * 100;
+                bar.width(current + "%")
+                    .attr("aria-valuenow", current);
 
                 if (limit - elapsed <= 5000)
                     bar.removeClass(settings.baseStyle)
